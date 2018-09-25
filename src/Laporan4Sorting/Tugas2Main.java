@@ -22,30 +22,36 @@ public class Tugas2Main {
         listAtlet[6] = new Tugas2Atlet("Taipei", "Lin", 22.67);
         listAtlet[7] = new Tugas2Atlet("India", "Khade", 22.47);
 
-        System.out.println("Data Sebelum Diurutkan");
+        System.out.println("\tData Sebelum Diurutkan");
         HASIL(listAtlet);
         System.out.println("");
 
+        System.out.println("\tData Ascending Bubble Sort");
         BubbleSortASC(listAtlet);
         HASIL(listAtlet);
         System.out.println("");
         
+        System.out.println("\tData Descending Bubble Sort");
         BubbleSortDESC(listAtlet);
         HASIL(listAtlet);
         System.out.println("");
         
+        System.out.println("\tData Ascending Selection Sort");
         selectionSortASC(listAtlet);
         HASIL(listAtlet);
         System.out.println("");
         
+        System.out.println("\tData Descending Selection Sort");
         selectionSortDESC(listAtlet);
         HASIL(listAtlet);
         System.out.println("");
         
+        System.out.println("\tData Ascending Insertion Sort");
         insertionSortASC(listAtlet);
         HASIL(listAtlet);
         System.out.println("");
         
+        System.out.println("\tData Descending Insertion Sort");
         insertionSortDESC(listAtlet);
         HASIL(listAtlet);
         System.out.println("");
@@ -57,6 +63,7 @@ public class Tugas2Main {
         System.out.printf("%-15s", "Nama");
         System.out.printf("%-10s", "Waktu");
         System.out.println("");
+        System.out.println("----------------------------------------");
         for (int i = 0; i < listAtlet.length; i++) {
             System.out.printf("%-5s", (i + 1));
             System.out.printf("%-15s", listAtlet[i].getNegara());
