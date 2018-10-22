@@ -12,31 +12,35 @@ import java.util.Arrays;
  * @author basisb22
  */
 public class Tugas1 {
-    
     public static void main(String[] args) {
-        int[] list = {23, 43, 56, 1, 34, 89, 65, 4, 77, 56, 54, 33, 45, 23, 89, 76, 12, 67, 54, 8, 9, 44, 98, 100};
-        System.out.println("Data awal             = " + Arrays.toString(list));
+        int[] listBubbleAsc  = {23, 43, 56, 1, 34, 89, 65, 4, 77, 56, 54, 33, 45, 23, 89, 76, 12, 67, 54, 8, 9, 44, 98, 100};
+        int[] listBubbleDesc = {23, 43, 56, 1, 34, 89, 65, 4, 77, 56, 54, 33, 45, 23, 89, 76, 12, 67, 54, 8, 9, 44, 98, 100};
+        int[] listSelectAsc  = {23, 43, 56, 1, 34, 89, 65, 4, 77, 56, 54, 33, 45, 23, 89, 76, 12, 67, 54, 8, 9, 44, 98, 100};
+        int[] listSelectDesc = {23, 43, 56, 1, 34, 89, 65, 4, 77, 56, 54, 33, 45, 23, 89, 76, 12, 67, 54, 8, 9, 44, 98, 100};
+        int[] listInsertAsc  = {23, 43, 56, 1, 34, 89, 65, 4, 77, 56, 54, 33, 45, 23, 89, 76, 12, 67, 54, 8, 9, 44, 98, 100};
+        int[] listInsertDesc = {23, 43, 56, 1, 34, 89, 65, 4, 77, 56, 54, 33, 45, 23, 89, 76, 12, 67, 54, 8, 9, 44, 98, 100};
+        System.out.println("Data awal             = " + Arrays.toString(listBubbleAsc));
         
         System.out.println("\nBUBBLE SORT");
-        bubbleSortAsc(list);
-        System.out.println("Data urut ascending   = " + Arrays.toString(list));
+        bubbleSortAsc(listBubbleAsc);
+        System.out.println("Data urut ascending   = " + Arrays.toString(listBubbleAsc));
         
-        bubbleSortDesc(list);
-        System.out.println("Data urut descending  = " + Arrays.toString(list));
+        bubbleSortDesc(listBubbleDesc);
+        System.out.println("Data urut descending  = " + Arrays.toString(listBubbleDesc));
         
         System.out.println("\nSELECTION SORT");
-        selectionSortAsc(list);
-        System.out.println("Data urut ascending   = " + Arrays.toString(list));
+        selectionSortAsc(listSelectAsc);
+        System.out.println("Data urut ascending   = " + Arrays.toString(listSelectAsc));
         
-        selectionSortDesc(list);
-        System.out.println("Data urut descending  = " + Arrays.toString(list));
+        selectionSortDesc(listSelectDesc);
+        System.out.println("Data urut descending  = " + Arrays.toString(listSelectDesc));
         
         System.out.println("\nINSERTION SORT");
-        insertionSortAsc(list);
-        System.out.println("Data urut ascending   = " + Arrays.toString(list));
+        insertionSortAsc(listInsertAsc);
+        System.out.println("Data urut ascending   = " + Arrays.toString(listInsertAsc));
         
-        insertionSortDesc(list);
-        System.out.println("Data urut descending  = " + Arrays.toString(list));
+        insertionSortDesc(listInsertDesc);
+        System.out.println("Data urut descending  = " + Arrays.toString(listInsertDesc));
         
     }
     
@@ -54,7 +58,7 @@ public class Tugas1 {
     }
     
     public static int[] bubbleSortDesc(int[] list) {
-        for (int i = 0; i < list.length - 1; i++) {
+        for (int i = 0; i < list.length; i++) {
             for (int j = 0; j < list.length - 1; j++) {
                 if (list[j] < list[j + 1]) {
                     int swap = list[j];

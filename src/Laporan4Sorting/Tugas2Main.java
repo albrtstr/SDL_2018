@@ -74,7 +74,7 @@ public class Tugas2Main {
     }
 
     public static Tugas2Atlet[] BubbleSortASC(Tugas2Atlet[] listAtlet) {
-        for (int i = 0; i < listAtlet.length - 2; i++) {
+        for (int i = 0; i < listAtlet.length; i++) {
             for (int j = 0; j < listAtlet.length - 1; j++) {
                 if (listAtlet[j].compareTo(listAtlet[j + 1]) > 0) {
                     Tugas2Atlet swap = listAtlet[j];
