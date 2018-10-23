@@ -24,11 +24,12 @@ public class rataRata {
         
         int jml = 0;
         for (int i = 0; i < data.size(); i++) {
+            System.out.println(data.get(i));
             int ubah = (int) data.get(i);
             jml = jml + ubah;
         }
         
         double rata = jml/data.size();
-        System.out.println(rata);
+        System.out.println("Rata-rata = "+rata);
     }
 }
