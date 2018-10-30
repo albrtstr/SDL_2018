@@ -19,9 +19,14 @@ public class Main {
 
         while (!baru.isEmpty()) {
             System.out.println(baru.removeFirst());
+            
         }
 
-        baru.toString();
-        System.out.println(baru.searching(200));
+        LinkedList baru1 = new LinkedList();
+        System.out.println(baru1.toString());
+        
+        //System.out.println(baru.search(200));
+        
+        //Yang toString dan Searching belum selesai 
     }
 }

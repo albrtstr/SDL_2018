@@ -71,22 +71,28 @@ public class LinkedList {
         return null;
     }
     
-    public ListNode searching(int searchValue){
-        ListNode cek = new ListNode();
-        boolean found = false;
-        if (isEmpty() == true) {
-            return null;
-        }else{
-            while (head.getNext() != null && !found) {
-                if (head.) {
-                    
-                }
-            }
-        }
-    }
+//    public ListNode searching(int searchValue){
+//        ListNode cek = new ListNode();
+//        boolean found = false;
+//        if (isEmpty() == true) {
+//            return null;
+//        }else{
+//            while (head.getNext() != null && !found) {
+//                if (head.) {
+//                    
+//                }
+//            }
+//        }
+//    }
     
     public int size(){
-        return size;
+        ListNode node = head;
+        int count = 0;
+        while (node != null) {
+            count++;
+            node = node.getNext();
+        }
+        return count;
     }
     
     public boolean isEmpty(){
@@ -100,7 +106,13 @@ public class LinkedList {
 
     @Override
     public String toString() {
-        return "LinkedList{" + "head=" + head + ", size=" + size + '}';
+        ListNode node = head;
+        String str = "";
+        while (node != null) {
+            str += remove(node);
+            node = node.getNext();
+        }
+        return str;
     }
     
     
