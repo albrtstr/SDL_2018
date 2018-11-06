@@ -21,11 +21,13 @@ public class Main {
             System.out.println(baru.removeFirst());
             
         }
-
         LinkedList baru1 = new LinkedList();
-        System.out.println(baru1.toString());
+        System.out.println(baru.search(100));
+
+//        LinkedList baru1 = new LinkedList();
+//        System.out.println(baru1.toString());
         
-        //System.out.println(baru.search(200));
+//        System.out.println(baru.search(200));
         
         //Yang toString dan Searching belum selesai 
     }

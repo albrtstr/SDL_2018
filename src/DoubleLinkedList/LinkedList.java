@@ -62,13 +62,15 @@ public class LinkedList {
     }
     
     public ListNode search(int searchValue){
-        ListNode data = new ListNode();
-        for (int i = 0; i < size; i++) {
-            if (searchValue == data.getData()) {
-                return data;
+        ListNode temp = head;
+        if (searchValue < size) {
+            for (int i = 0; i < searchValue; i++) {
+                temp = temp.getNext();
             }
+        } else {
+            System.out.println("Data Tidak Ada");
         }
-        return null;
+        return temp;
     }
     
 //    public ListNode searching(int searchValue){
@@ -78,7 +80,7 @@ public class LinkedList {
 //            return null;
 //        }else{
 //            while (head.getNext() != null && !found) {
-//                if (head.) {
+//                if () {
 //                    
 //                }
 //            }
