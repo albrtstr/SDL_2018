@@ -10,18 +10,19 @@ package DoubleLinkedList;
  * @author basisb22
  */
 public class ListNode {
+
     private int data;
     private ListNode next;
     private ListNode prev;
 
-    public ListNode(){
-        
+    public ListNode() {
+
     }
-    
-    public ListNode(int data){
+
+    public ListNode(int data) {
         this.data = data;
     }
-    
+
     public ListNode(int data, ListNode next, ListNode prev) {
         this.data = data;
         this.next = next;
@@ -51,6 +52,5 @@ public class ListNode {
     public void setPrev(ListNode prev) {
         this.prev = prev;
     }
-    
-    
+
 }

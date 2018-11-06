@@ -12,23 +12,22 @@ package DoubleLinkedList;
 public class Main {
 
     public static void main(String[] args) {
-        LinkedList baru = new LinkedList();
-        baru.addFirst(200);
-        baru.addLast(100);
-        baru.addLast(500);
+        LinkedList val = new LinkedList();
+        val.addFirst(10);
+        val.addLast(20);
+        val.addLast(30);
 
-        while (!baru.isEmpty()) {
-            System.out.println(baru.removeFirst());
-            
-        }
-        LinkedList baru1 = new LinkedList();
-        System.out.println(baru.search(100));
+        System.out.println("Daftar Nilai \t\t\t= " + val.toString());
+        //Method toString yang berfungsi untuk menampilkan seluruh elemen 
+        //dengan return 0
+        ListNode node = val.searchData(20);
+        System.out.println("Cari data \t\t\t= " + node.getData());
 
-//        LinkedList baru1 = new LinkedList();
-//        System.out.println(baru1.toString());
-        
-//        System.out.println(baru.search(200));
-        
-        //Yang toString dan Searching belum selesai 
+        int index = val.searchIndex(20);
+        System.out.println("Elemen " + node.getData() + " ada di di index \t= " + index);
+
+        int cari = val.get(1);
+        System.out.println("Index " + index + " adalah \t\t\t= " + cari);
+
     }
 }
