@@ -17,6 +17,8 @@ public class Main {
         val.addLast(20);
         val.addLast(30);
 
+        System.out.println(val.size());
+        
         System.out.println("Daftar Nilai \t\t\t= " + val.toString());
         //Method toString yang berfungsi untuk menampilkan seluruh elemen 
         //dengan return 0

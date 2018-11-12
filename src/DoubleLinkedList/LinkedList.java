@@ -98,13 +98,7 @@ public class LinkedList {
     }
 
     public int size() {
-        ListNode node = head;
-        int count = 0;
-        while (node != null) {
-            count++;
-            node = node.getNext();
-        }
-        return count;
+        return size;
     }
 
     public boolean isEmpty() {
