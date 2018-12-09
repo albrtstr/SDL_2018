@@ -38,7 +38,5 @@ public class QueueDinamis {
 
     public void setAntrian(LinkedList antrian) {
         this.antrian = antrian;
-    }
-    
-    
+    }  
 }

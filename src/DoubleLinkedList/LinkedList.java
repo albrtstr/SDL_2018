@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Queue;
-
-import DoubleLinkedList.*;
+package DoubleLinkedList;
 
 /**
  *
@@ -62,15 +60,6 @@ public class LinkedList {
         return n;
     }
 
-    public int size() {
-        return size;
-    }
-
-    public boolean isEmpty() {
-        return size == 0;
-
-    }
-
     public ListNode searchData(int data) {
         ListNode temp = head;
         for (int i = 0; i < size; i++) {
@@ -107,7 +96,20 @@ public class LinkedList {
         }
         return -1;
     }
-    
+
+    public int size() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        if (size == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
     @Override
     public String toString() {
         ListNode node = head;

@@ -22,7 +22,6 @@ public class QueueStatis {
 
     public QueueStatis(int size) {
         elemen = new int[size];
-
     }
 
     public boolean enqueue(int elemen) {
@@ -38,7 +37,7 @@ public class QueueStatis {
             int temp = elemen[front];
             front++;
             return temp;
-        }else{
+        } else {
             return -1;
         }
     }
@@ -82,6 +81,5 @@ public class QueueStatis {
     public void setSize(int size) {
         this.size = size;
     }
-    
-    
+
 }
